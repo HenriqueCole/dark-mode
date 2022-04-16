@@ -12,6 +12,8 @@
     --header-bg: rgb(165, 152, 152);
     --header-color: rgb(123, 105, 105);
     --header-bx-sh: #2c2828 0px -1px 6px 1px;
+    --body-bgContainer: rgb(255, 226, 226);
+    --body-bx-sh-C: #726464b0 -3px 8px 16px 1px;
 }
 
 .dark-mode:root{
@@ -22,6 +24,8 @@
     --header-bg: rgb(32, 25, 25);
     --header-color: rgb(167, 135, 135);
     --header-bx-sh: #cdafaf 0px -1px 6px 1px;
+    --body-bgContainer: rgb(32 23 23);
+    --body-bx-sh-C: #000000b0 -3px 8px 16px 1px;
 }
 
 .bar{
@@ -99,4 +103,128 @@ a{
 }
 a:hover{
     color: var(--body-a-hover);
+}
+
+.containerCards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2.5rem;
+}
+
+.cardOne{
+    display: flex;
+    justify-content: end;
+    background-color: #940606;
+    height: 14rem;
+    width: 495px;
+    border-radius: 10px;
+    margin: 0px 0px 25px 0px;
+    transition: 0.2s;
+}
+.cardOne:hover{
+    transform: translateY(-6px);
+}
+
+.onCardOne{
+    background-color: var(--body-bgContainer);
+    height: 14rem;
+    width: 30rem;
+    border-radius: 10px;
+    box-shadow: var(--body-bx-sh-C);
+    margin: 0px 0px 0px 0px;
+}
+
+.cardTwo{
+    display: flex;
+    justify-content: end;
+    background-color: rgb(23, 186, 23);
+    height: 14rem;
+    width: 495px;
+    border-radius: 10px;
+    margin: 0px 0px 25px 0px;
+    transition: 0.2s;
+}
+.cardTwo:hover{
+    transform: translateY(-6px);
+}
+
+.onCardTwo{
+    background-color: var(--body-bgContainer);
+    height: 14rem;
+    width: 30rem;
+    border-radius: 10px;
+    box-shadow: var(--body-bx-sh-C);
+}
+.cardThree{
+    display: flex;
+    justify-content: end;
+    background-color: rgb(28, 28, 195);
+    height: 14rem;
+    width: 495px;
+    border-radius: 10px;
+    margin: 0px 0px 25px 0px;
+    transition: 0.2s;
+}
+.cardThree:hover{
+    transform: translateY(-6px);
+}
+
+.onCardThree{
+    background-color: var(--body-bgContainer);
+    height: 14rem;
+    width: 30rem;
+    border-radius: 10px;
+    box-shadow: var(--body-bx-sh-C);
+}
+
+.cardFour{
+    display: flex;
+    justify-content: end;
+    background-color: rgb(164, 164, 173);
+    height: 14rem;
+    width: 495px;
+    border-radius: 10px;
+    margin: 0px 0px 25px 0px;
+    transition: 0.2s;
+}
+.cardFour:hover{
+    transform: translateY(-6px);
+}
+
+.onCardFour{
+    background-color: var(--body-bgContainer);
+    height: 14rem;
+    width: 30rem;
+    border-radius: 10px;
+    box-shadow: var(--body-bx-sh-C);
+}
+
+.containerStuff{
+    display: grid;
+    justify-content: flex-start;
+    margin: 15px;
+}
+
+.containerButton{
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    margin: 10px;
+}
+
+button{
+    border: none;
+    background-color: #00579d;
+    border-radius: 15px;
+    height: 32px;
+    font-size: 16px;
+    width: 120px;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+button:hover{
+    background-color: #157acd;
 }
